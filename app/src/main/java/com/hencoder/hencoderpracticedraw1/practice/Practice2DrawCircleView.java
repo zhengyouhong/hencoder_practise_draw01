@@ -8,6 +8,8 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.hencoder.hencoderpracticedraw1.Utils;
+
 public class Practice2DrawCircleView extends View {
 
     public Practice2DrawCircleView(Context context) {
@@ -18,7 +20,8 @@ public class Practice2DrawCircleView extends View {
         super(context, attrs);
     }
 
-    public Practice2DrawCircleView(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public Practice2DrawCircleView(Context context,
+                                   @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -34,6 +37,15 @@ public class Practice2DrawCircleView extends View {
         canvas.drawCircle(300, 200, 100, paint);
 
         paint.setStyle(Paint.Style.STROKE);
-//        paint.setStrokeWidth();
+        paint.setStrokeWidth(Utils.dp2px(2, getContext()));
+        canvas.drawCircle(800, 200, 96, paint);
+
+
+        paint.setStrokeWidth(Utils.dp2px(20, getContext()));
+        canvas.drawCircle(800, 500, 96, paint);
+
+        paint.setColor(Color.parseColor("#4A90E2"));
+        paint.setStyle(Paint.Style.FILL);
+        canvas.drawCircle(300, 500, 96, paint);
     }
 }
