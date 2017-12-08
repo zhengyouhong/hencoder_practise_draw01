@@ -28,6 +28,7 @@ public class Practice9DrawPathView extends View {
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
+
 //        练习内容：使用 canvas.drawPath() 方法画心形
         // ( 450, 500)
         // (  550, 500)
