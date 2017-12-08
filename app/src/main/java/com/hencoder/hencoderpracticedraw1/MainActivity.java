@@ -71,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
         @StringRes int titleRes;
         @LayoutRes int practiceLayoutRes;
 
-        PageModel(@LayoutRes int sampleLayoutRes, @StringRes int titleRes, @LayoutRes int practiceLayoutRes) {
+        PageModel(
+                @LayoutRes int sampleLayoutRes,
+                @StringRes int titleRes, @LayoutRes int practiceLayoutRes) {
             this.sampleLayoutRes = sampleLayoutRes;
             this.titleRes = titleRes;
             this.practiceLayoutRes = practiceLayoutRes;
