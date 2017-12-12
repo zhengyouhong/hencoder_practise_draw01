@@ -12,4 +12,13 @@ public class Utils {
         float density = context.getResources().getDisplayMetrics().density;
         return (int) (density * dp + 0.5f);
     }
+
+    public static int dp2px(float dp, Context context){
+        float density = context.getResources().getDisplayMetrics().density;
+        return (int) (density * dp + 0.5f);
+    }
+
+    public static int getDisplayWidth(Context context){
+        return context.getResources().getDisplayMetrics().widthPixels;
+    }
 }
